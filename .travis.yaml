@@ -1,1 +1,10 @@
 language: python
+python:
+  - "3.8"
+branches: master 
+script: true 
+install:
+  - pip install mkdocs 
+
+before_deploy:
+    - python car.py 
